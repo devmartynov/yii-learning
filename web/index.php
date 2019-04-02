@@ -1,9 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: denis
- * Date: 02.04.2019
- * Time: 19:57
- */
 
-print('hello, world!');
+
+require __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
+$config = require __DIR__ . '/../config/web.php';
+(new yii\web\Application($config)) -> run();
